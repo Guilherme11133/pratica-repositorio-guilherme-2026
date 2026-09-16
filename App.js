@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import {} from '@gluestack-ui/core'
-
 import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
 import '@/global.css';
+import { Button, ButtonText } from '@/components/ui/button';
 
 export default function App() {
   return (
-    
     <GluestackUIProvider mode="dark">
       <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+        <Text>Gravação Aula</Text>
+        <Text style={styles.negrito}>DDM I - 2026</Text>
+        <Button variant="secondary" size="default">
+          <ButtonText className='text-black front-bold uppercase'>2o. INFO - etec</ButtonText>
+        </Button>
+      </View>
     </GluestackUIProvider>
-  
   );
 }
 
